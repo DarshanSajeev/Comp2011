@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Profile</h1>
+</header>
+<main>
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Age:</strong> {{ user.age.strftime('%Y-%m-%d') }}</p>
+    <p><strong>Followers:</strong> {{ follower_count }}</p>
+</main>
+{% endblock %}

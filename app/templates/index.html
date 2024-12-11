@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Posts</h2>
+<ul>
+    {% for post in posts %}
+    <li>
+        <p><strong>{{ post.author.username }}</strong>: {{ post.content }}</p>
+        <p>Posted on {{ post.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+        <form action="{{ url_for('main.like_post', post_id=post.id) }}" method="post">
+            <input type="hidden" name="user_id" value="1"> <!-- Hardcoded User ID -->
+            <button type="submit">Like</button>
+        </form>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

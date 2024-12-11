@@ -1,0 +1,226 @@
+/* Stylesheet for the application */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text color */
+    background-color: #fff; /* Light background color */
+}
+
+.nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+header, main {
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.post {
+    background-color: #f8f9fa;
+    padding: 40px; /* Increase padding to make posts taller */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Increase the maximum width of the post */
+    position: relative; /* Ensure the time can be positioned relative to the post */
+    min-height: 300px; /* Add minimum height to make posts taller */
+}
+
+.post h2 {
+    font-weight: bold;
+}
+
+.post textarea {
+    width: 99%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    background-color: #f9f9f9;
+}
+
+.post small {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #666;
+}
+
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flashes li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flashes .success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.flashes .danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #007bff !important;
+}
+
+.nav-link:hover {
+    color: grey !important;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+/* Custom styles for the follow button */
+.follow-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px 8px;
+    font-size: 0.875rem; /* Smaller font size */
+    margin-top: 10px;
+    display: inline-block;
+    width: 10%;
+}
+
+.follow-button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff; /* Link color */
+}
+
+a:hover {
+    color: #0056b3; /* Link hover color */
+}
+
+/* Custom styles for the post container */
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.post-content-box {
+    background-color: #ffffff;
+    padding: 20px; /* Increase padding to make content taller */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-height: 200px; /* Add minimum height to make content taller */
+}
+
+.post-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+/* Custom styles for the post time */
+.post-time {
+    color: #666;
+    font-size: 0.875rem;
+}
+
